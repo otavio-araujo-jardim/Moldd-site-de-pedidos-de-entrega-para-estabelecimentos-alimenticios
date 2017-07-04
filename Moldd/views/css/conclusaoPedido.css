@@ -1,0 +1,299 @@
+@font-face {
+	font-family: DancingScript;
+	src: url(../fonts/DancingScript-Regular.ttf);
+}
+
+@font-face {
+	font-family: RalewayRegular;
+	src: url(../fonts/Raleway-Regular.ttf);
+}
+
+body {
+	background-color: #efefef;
+	font-family: RalewayRegular;
+	background-image: url(../imagens/fundo.jpg);   
+    background-size:100%;
+    background-repeat: repeat-y;
+}
+/*---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---*/
+
+
+/*----------------------------------------------
+     Botão
+----------------------------------------------*/
+
+.botao{
+	float: right;	
+	border:none;
+	padding: 10px 30px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 2rem;
+	transition: all 0.5s ease-in;
+	outline: none;
+	position: relative;
+	bottom: 0;	
+	text-align: center;
+	margin: 5px;
+	
+}
+
+.botao:hover , .botao:focus {
+	position: relative;
+	bottom: 5px;
+}
+
+.botao--vermelho {
+	background-color: #a93125;
+}
+
+.botao--vermelho:hover , .botao--vermelho:focus {
+	background-color: #d82513;
+	box-shadow:  0 5px 5px rgba(0, 0, 0, 0.15);
+	color: #fff;
+	text-decoration: none;
+}
+
+.botao--amarelo {
+	background-color: #d0a75f;
+}
+
+.botao--amarelo:hover , .botao--amarelo:focus {
+	background-color: #f1b245;
+	box-shadow:  0 5px 5px rgba(0, 0, 0, 0.15);	
+	color: #fff;
+	text-decoration: none;
+}
+
+@media (max-width: 767px) {
+	.botao {
+		width: 100%;
+	}
+}
+
+/*----------------------------------------------
+     Formulario
+----------------------------------------------*/
+
+.formulario {
+	margin: 50px 0;    
+}
+
+.formulario__texto {
+	color: #ffeac2;
+}
+
+.formulario__campo {
+	margin-bottom: 10px;
+}
+
+.formulario__aviso-hora {
+	color: #afafaf;
+    background-color: rgba(0, 0, 0, 0.57);
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.22);
+}
+
+
+/*----------------------------------------------
+     estabelecimento-cardapio
+----------------------------------------------*/
+
+.estabelecimento-cardapio {
+	padding: 30px 0 0 0;	
+	margin-bottom: 50px;
+}
+
+.estabelecimento-cardapio__abas {
+	padding: 10px 0;
+	font-family: DancingScript;	
+}
+
+.estabelecimento-cardapio__aba {
+	font-size: 3rem;
+}
+
+.estabelecimento-cardapio__aba a{
+	background-color: #fff;
+	color: #88682c;
+}
+
+.estabelecimento-cardapio__abas>li.active>a, .estabelecimento-cardapio__abas>li.active>a:focus, .estabelecimento-cardapio__abas>li.active>a:hover {
+	background-color: #88682c;
+}
+
+/*----------------------------------------------
+     Item
+----------------------------------------------*/
+
+.item {
+	padding: 30px 1px;    
+    margin-bottom: 20px;
+    background-color: #88682c;
+    background: linear-gradient(to right, white 85.4%, rgb(136, 104, 44) 20px);
+}
+
+.item__img {
+	padding: 5px;
+}
+
+.item__info {
+	padding: 0 20px;
+}
+
+.item__info p{
+	color: #bbb;
+	text-align: justify;
+}
+
+.item__cabecalho {
+	border-bottom: 1px solid #dadada;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.item__nome {
+	color: #bf0000;    
+    width: 70%;
+    padding: 5px;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.item__preco {
+	color: #d0ae00;
+    float: right;
+    text-align: right;
+    padding: 5px;    
+    margin-top: 10px;
+    width: 30%;
+    font-family: DancingScript;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.item__botao {
+	display: inline-block;
+	border: none;
+    padding: 10px;      
+    transition: all 0.5s ease-in;
+    outline: none;
+    background-color: transparent;
+    bottom: 0;
+    font-size: 3.5rem;
+}
+
+.item__botao--retirar {
+    display: block;
+    border: 2px solid #a50000;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    color: #a50000;    
+    position: relative;
+    left: 50%;
+    top: 50%;
+     -ms-transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.item__caixa-botao-retirar {
+	height: 160px;
+}
+
+.item__caixa-botoes {
+	height: 160px;
+	position: relative;
+}
+
+.item__botoes {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #ffffff;
+     -ms-transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.item__quantidade {
+	display: inline-block;
+	margin: 20px 10px;
+	font-size: 2rem;
+	vertical-align: top;
+	font-family: DancingScript;
+}
+
+.item__texto{
+	width: 100%;
+}
+
+
+@media (max-width: 991px) {
+	.item {
+		background: #fff;
+	}
+
+	.item__caixa-botoes {
+		margin-top: 30px;
+		height: 70px;
+		background-color: #88682c;	
+	}
+}
+
+@media (max-width: 1200px) {
+	.item__botao--retirar {
+	    font-size: 1.5rem;	    
+	}
+}
+
+/*----------------------------------------------
+     Botao Concluir
+----------------------------------------------*/
+
+.botao-concluir {
+	margin-bottom: 70px;
+}
+
+/*----------------------------------------------
+    Aviso
+----------------------------------------------*/
+
+.aviso {
+	margin: 100px 0 10px;
+	color: #d28901;
+	border-radius: 20px;
+	padding: 20px;
+	border: 2px solid #d28901;	
+    background-color: rgba(0, 0, 0, 0.60);
+    text-align: center;
+}
+
+/*----------------------------------------------
+     Total
+----------------------------------------------*/
+
+.total {
+    margin: 50px 0;
+    background-color: #d0a75f;
+    background: linear-gradient(to right, #674e22 , #d0a75f , #9c6a0f);
+}
+
+.total__quantia {
+	float: right;
+    padding: 20px 50px;
+    font-size: 2.5rem;
+    font-family: DancingScript;
+    background-color: #fff;
+}
+
+.total__quantia strong {
+	font-family: RalewayRegular;
+	color: #d0b832;
+}

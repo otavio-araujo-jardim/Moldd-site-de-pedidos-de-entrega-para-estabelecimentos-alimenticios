@@ -1,0 +1,571 @@
+@font-face {
+	font-family: DancingScript;
+	src: url(../fonts/DancingScript-Regular.ttf);
+}
+
+@font-face {
+	font-family: RalewayRegular;
+	src: url(../fonts/Raleway-Regular.ttf);
+}
+
+body {
+	background-color: #efefef;
+	font-family: RalewayRegular;
+	background-image: url(../imagens/fundo.jpg);   
+    background-size:100%;
+    background-repeat: repeat-y;
+}
+
+.layout-estabelecimento {
+	margin: 70px 0;
+	border-bottom: 1px solid #ded9d0;
+	border-top: 1px solid #ded9d0;
+	background-color: #fff;
+}
+
+/*---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---*/
+
+/*----------------------------------------------
+     Botão
+----------------------------------------------*/
+
+.botao{
+	float: right;	
+	border:none;
+	padding: 10px 30px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 2rem;
+	transition: all 0.5s ease-in;
+	outline: none;
+	position: relative;
+	bottom: 0;	
+	text-align: center;
+	margin: 5px;
+	
+}
+
+.botao:hover {
+	position: relative;
+	bottom: 5px;
+}
+
+.botao--vermelho {
+	background-color: #a93125;
+}
+
+.botao--vermelho:hover , .botao--vermelho:focus {
+	background-color: #d82513;
+	box-shadow:  0 5px 5px rgba(0, 0, 0, 0.15);
+	color: #fff;
+	text-decoration: none;
+}
+
+.botao--amarelo {
+	background-color: #d0a75f;
+}
+
+.botao--amarelo:hover , .botao--amarelo:focus {
+	background-color: #f1b245;
+	box-shadow:  0 5px 5px rgba(0, 0, 0, 0.15);	
+	color: #fff;
+	text-decoration: none;
+}
+/*----------------------------------------------
+     estabelecimento-informacao
+----------------------------------------------*/
+
+.estabelecimento-informacao {
+	background-color: #fff;
+	padding: 70px 15px 140px;
+	margin-bottom: 50px;
+}
+
+.estabelecimento-informacao__cabecalho {
+	margin: 0 30px 50px 30px
+}
+
+.estabelecimento-informacao__horario {
+	color: #3a3a3a;
+	margin-bottom: 30px;
+    text-align: right;
+}
+
+.estabelecimento-informacao__aberto {
+	margin-bottom: 20px;
+    text-align: right;
+    color: #27a200;
+    background-color: rgba(169, 255, 145, 0.34);
+    padding: 10px;
+}
+
+.estabelecimento-informacao__fechado {
+	margin-bottom: 20px;
+    text-align: right;
+    color: #a20000;
+    background-color: rgba(255, 157, 157, 0.34);
+    padding: 10px;
+}
+
+.estabelecimento-informacao__titulo {
+	margin: 65px 0 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.estabelecimento-informacao__tipo {
+	margin: 5px 0 0 0;
+    display: inline-block;
+}
+
+.estabelecimento-informacao__telefone {
+    margin: 5px 0 0 20px;
+    display: inline-block;
+}
+
+.estabelecimento-informacao__estrelas {
+	display: inline-block;
+    float: right;
+}
+
+.estabelecimento-informacao__endereco {    
+    display: inline-block;
+    vertical-align: top;
+    color: #aaa;
+    margin-top: 15px;
+}
+
+.estabelecimento-informacao__complemento {
+	padding-right: 10px;
+	margin: 50px 0;
+	color: #aaa;
+}
+
+.estabelecimento-informacao__endereco  p {
+	text-align: justify;
+	margin-right: 30px;
+	margin-bottom: 20px
+}
+
+@media (max-width: 767px) {
+	.estabelecimento-informacao__endereco  p , .estabelecimento-informacao__complemento {
+		text-align: justify;
+		margin:	0 30px 20px 30px;
+	}
+
+	.estabelecimento-informacao__tipo {
+		text-align: right;
+    	display: block;
+	}
+
+	.estabelecimento-informacao__telefone {
+	    text-align: right;
+    	display: block;
+	}
+
+	.estabelecimento-informacao__estrelas {
+		text-align: right;
+    	display: block;
+	}
+}
+
+/*----------------------------------------------
+     estabelecimento-cardapio
+----------------------------------------------*/
+
+.estabelecimento-cardapio {
+	padding: 50px 0;	
+	margin-bottom: 50px;
+}
+
+.estabelecimento-cardapio__abas {
+	padding: 10px 0;
+	font-family: DancingScript;	
+}
+
+.estabelecimento-cardapio__aba {
+	font-size: 3rem;
+}
+
+.estabelecimento-cardapio__aba a{
+	background-color: #fff;
+	color: #88682c;
+}
+
+.estabelecimento-cardapio__abas>li.active>a, .estabelecimento-cardapio__abas>li.active>a:focus, .estabelecimento-cardapio__abas>li.active>a:hover {
+	background-color: #88682c;
+}
+
+/*----------------------------------------------
+     Item
+----------------------------------------------*/
+
+.item {
+	padding: 30px 1px;    
+    margin-bottom: 20px;
+    background-color: #88682c;
+    border-top: 1px solid #ddd;    
+    background: linear-gradient(to right, white 85.4%, rgb(136, 104, 44) 20px);
+}
+
+.item--sem-borda {
+	border: none;
+}
+
+.item__info {
+	padding: 0 20px;
+}
+
+.item__info p{
+	color: #bbb;
+	text-align: justify;
+}
+
+.item__cabecalho {
+	border-bottom: 1px solid #dadada;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.item__nome {
+	color: #bf0000;    
+    width: 70%;
+    padding: 5px;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.item__preco {
+	color: #d0ae00;
+    float: right;
+    text-align: right;
+    padding: 5px;    
+    margin-top: 10px;
+    width: 30%;
+    font-family: DancingScript;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.item__botao {
+	display: inline-block;
+	border: none;
+    padding: 10px 0;      
+    transition: all 0.5s ease-in;
+    outline: none;
+    background-color: transparent;
+    bottom: 0;
+    font-size: 3.5rem;
+}
+
+.item__img {
+	padding: 0 20px 10px 20px;
+}
+
+.item__texto {
+	font-size: 14px;
+	margin-bottom: 10px
+}
+
+.item__botao--retirar {
+    display: block;
+    border: 2px solid #a50000;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    color: #a50000;    
+    position: relative;
+    left: 50%;
+    top: 50%;
+    -ms-transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+.item__caixa-botao-retirar {
+	height: 160px;
+}
+
+.item__caixa-botoes {
+	height: 160px;
+	position: relative;
+}
+
+.item__botoes { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #ffffff;
+    -ms-transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.item__quantidade {
+	display: inline-block;
+	margin: 20px 10px;
+	font-size: 2rem;
+	vertical-align: top;
+	font-family: DancingScript;
+}
+
+.item__quant {
+	margin-top: 20px;
+}
+
+@media (max-width: 991px) {
+	.item {
+		background: #fff;
+	}
+
+	.item__caixa-botoes {
+		height: 130px;
+		background-color: #88682c;	
+	}
+}
+
+@media (max-width: 1200px) {
+	.item__botao--retirar {
+	    font-size: 1.5rem;	    
+	}
+}
+
+/*----------------------------------------------
+     caixa-carrinho
+----------------------------------------------*/
+
+.caixa-carrinho {
+	background-color: #fff;	
+	transition: all 0.5s ease-in;
+}
+
+.caixa-carrinho__botao {
+	display: inline-block;
+	padding: 40px 20%;
+	border: none;
+    transition: all 0.5s ease-in;
+    outline: none;
+    position: relative;
+    background-color: transparent;
+    bottom: 0;
+}
+
+.caixa-carrinho__aceso {
+	background-color: #e6fdb3;
+}
+
+.caixa-carrinho__img {
+	margin: 0 25px 0 25px;
+}
+
+.caixa-carrinho__texto {
+	font-size: 24px;
+    margin: 10px 0 0 0;
+}
+
+
+@media (max-width: 991px) {
+	.caixa-carrinho-fixado {		
+		width: 100%;
+	}
+}
+
+@media (min-width: 991px) {
+	.caixa-carrinho-fixado {
+		position: fixed !important;
+		margin-top: 30px !important;
+		top: 0 !important;
+		border-radius: 10px;		
+	}
+}
+
+@media (min-width: 991px) {
+	.caixa-carrinho-fixado {		
+		width: 212.5px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.caixa-carrinho-fixado {		
+		width: 262.5px;
+	}
+}
+
+/*----------------------------------------------
+     carrinho
+----------------------------------------------*/
+
+.carrinho__janela {
+	width: 900px;
+	margin-top: 70px;
+}
+
+@media (max-width: 991px) {
+	.carrinho__janela {
+		width: 90%;
+		margin-right: 5%;
+		margin-left: 5%;
+	}
+}
+
+.carrinho__titulo {
+	display: inline-block;
+	color: #7b7b7b;
+}
+
+.carrinho__botao-fechar {
+	font-size: 5rem;
+}
+
+.close {
+	color: #630000;
+    opacity: 1;
+}
+
+.close:focus, .close:hover {
+	opacity: 1;
+}
+
+.carrinho__botao-fechar:hover , .carrinho__botao-fechar:focus {
+	outline: none;
+	color: #d21500;	
+}
+
+.carrinho__lista {
+	padding: 30px;
+}
+
+.carrinho__abas {
+	padding: 10px 0;
+	font-family: DancingScript;	
+}
+
+.carrinho__aba {
+	font-size: 2rem;
+}
+
+.carrinho__aba a{
+	background-color: #fff;
+	color: #88682c;
+}
+
+.carrinho__abas>li.active>a, .carrinho__abas>li.active>a:focus, .carrinho__abas>li.active>a:hover {
+	background-color: #88682c;
+}
+
+@media (max-width: 767px) {
+	.carrinho__lista {
+		padding: 0;
+	}
+}
+/*----------------------------------------------
+     Estrelas
+----------------------------------------------*/
+
+.estrelas {
+    padding: 30px 0;
+}
+
+.estrelas__texto {
+	color: rgba(255, 255, 255, 0.82);
+}
+
+.estrelas__texto  strong{
+	color: rgba(255, 243, 101, 0.94);
+}
+
+.estrelas__caixa {
+	border-top: 1px solid rgba(255, 255, 255, 0.53);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.53);
+    padding: 10px 5px;
+}
+
+.estrelas__caixa .estrelas__translucidas{
+	opacity: 0.4;
+}
+
+.estrelas__caixa:hover .estrelas__translucidas {
+	opacity: 1;
+}
+
+.estrelas__caixa .estrelas__translucidas:hover {
+	cursor: pointer;
+}
+
+.estrelas__caixa .estrelas__opacas {
+	opacity: 1;
+}
+
+
+/*----------------------------------------------
+     Comentários
+----------------------------------------------*/
+
+.comentarios {
+    padding: 30px 15px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;    
+    background-color: rgba(255, 255, 255, 0.23);
+}
+
+.comentarios__conteudo {
+	padding: 50px 20px;
+}
+
+.comentarios__frase {
+	color: #808080;
+}
+
+.comentarios__botao {
+	float: none;
+    width: 100%;
+    margin: 0;
+    background-color: #bc2e2e;
+}
+
+.comentarios__botao-excluir {
+	color: #790000;
+	float: none;
+    padding: 5px;
+	background: none;
+}
+
+.comentarios__botao-excluir-texto {
+	color: #790000;
+}
+
+.comentarios__textarea {
+	width: 100%;
+}
+
+.comentarios__botao-salvar {
+	width: 100%; 
+}
+
+.comentarios__comentario {
+	margin: 30px 0;
+	padding: 10px 0;
+	border-top: 1px solid #dcdcdc;
+}
+
+.comentarios__cabecalho{
+	color: #929292;
+    padding: 0 10px;
+}
+
+.comentarios__texto {
+	padding: 20px;
+}
+
+/*.comentarios__comentario--proprio {
+	background-color: #e8fff0;
+	border-left: 2px solid #009534;
+}*/
+
+.comentarios__comentario--proprio h5 {
+	color: #009534;
+}

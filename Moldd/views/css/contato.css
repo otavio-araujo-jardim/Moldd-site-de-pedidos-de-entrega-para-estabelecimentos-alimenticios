@@ -1,0 +1,113 @@
+@font-face {
+	font-family: DancingScript;
+	src: url(../fonts/DancingScript-Regular.ttf);
+}
+
+@font-face {
+	font-family: RalewayRegular;
+	src: url(../fonts/Raleway-Regular.ttf);
+}
+
+body {
+	background-color: #efefef;
+	font-family: RalewayRegular;
+	background-image: url(../imagens/fundo.jpg);   
+    background-size:100%;
+    background-repeat: repeat-y;
+}
+
+.layout-formContato {
+    background-color: #fff;
+}
+
+/*---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---*/
+
+/*----------------------------------------------
+     Botão
+----------------------------------------------*/
+
+.botao{
+	float: right;	
+	border:none;
+	padding: 10px 30px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 2rem;
+	transition: all 0.5s ease-in;
+	outline: none;
+	position: relative;
+	bottom: 0;	
+	text-align: center;
+	margin: 5px;
+	
+}
+
+.botao:hover , .botao:focus {
+	position: relative;
+	bottom: 5px;
+}
+
+.botao--vermelho {
+	background-color: #a93125;
+}
+
+.botao--vermelho:hover , .botao--vermelho:focus {
+	background-color: #d82513;
+	box-shadow:  0 5px 5px rgba(0, 0, 0, 0.15);
+	color: #fff;
+	text-decoration: none;
+}
+
+.botao--amarelo {
+	background-color: #d0a75f;
+}
+
+.botao--amarelo:hover , .botao--amarelo:focus {
+	background-color: #f1b245;
+	box-shadow:  0 5px 5px rgba(0, 0, 0, 0.15);	
+	color: #fff;
+	text-decoration: none;
+}
+
+
+
+/*----------------------------------------------
+     Formulario
+----------------------------------------------*/
+
+.formContato {
+	padding: 50px 0;
+}
+
+
+/*----------------------------------------------
+     Formulario
+----------------------------------------------*/
+
+.formulario__titulo {
+	color: #928853;
+	border-bottom: 1px solid #928853;
+	margin: 50px 0;
+	padding: 5px;
+	font-family: DancingScript; 
+	text-align: left;
+}
+
+.formulario {
+	margin-top: 20px;
+}
+
+.formulario label{
+	display: block;
+	color: #585858;
+	padding: 5px 10px;
+}
+
+.formulario input{
+	height: 59px;
+	text-align: center;
+}
+
+.formulario__textarea {
+	width: 100%;
+}

@@ -1,0 +1,266 @@
+@font-face {
+	font-family: DancingScript;
+	src: url(../fonts/DancingScript-Regular.ttf);
+}
+
+@font-face {
+	font-family: RalewayRegular;
+	src: url(../fonts/Raleway-Regular.ttf);
+}
+
+.layout-abas {
+	margin: 70px 0;
+}
+
+.layout-fundo {
+	padding: 70px 0;
+	background-image: url(../imagens/fundo.jpg);   
+    background-size:100%;
+    background-repeat: repeat-y;	
+}
+
+.layout-lista {
+	margin-top: 50px;
+	background-color: #fff;
+}
+
+/*---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---*/
+
+
+
+/*----------------------------------------------
+     Botão
+----------------------------------------------*/
+
+.botao{
+	float: right;	
+	border:none;
+	padding: 10px 30px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 2rem;
+	transition: 0.5s ease-in;
+	outline: none;
+	position: relative;
+	bottom: 0;	
+	text-align: center;
+	margin: 30px 0;
+}
+
+.botao--imagem {
+	margin: 5px 0;
+}
+
+.botao:hover , .botao:focus {
+	position: relative;
+	bottom: 5px;
+}
+
+.botao--vermelho {
+	background-color: #a93125;
+}
+
+.botao--vermelho:hover , .botao--vermelho:focus {
+	background-color: #d82513;
+	box-shadow:  0 5px 5px rgba(0, 0, 0, 0.15);
+	color: #fff;
+	text-decoration: none;
+}
+
+.botao--amarelo {
+	background-color: #d0a75f;
+}
+
+.botao--amarelo:hover , .botao--amarelo:focus {
+	background-color: #f1b245;
+	box-shadow:  0 5px 5px rgba(0, 0, 0, 0.15);	
+	color: #fff;
+	text-decoration: none;
+}
+
+@media (max-width: 767px) {
+	.botao {
+		width: 100%;
+	}
+}
+
+/*----------------------------------------------
+     Abas
+----------------------------------------------*/
+
+.abas__aba {
+	font-size: 3rem;
+	font-family: DancingScript; 
+}
+
+/*----------------------------------------------
+     Formulario
+----------------------------------------------*/
+
+.formulario {
+	margin: 50px 0 70px 0;
+}
+
+.formulario--imagem {
+	margin: 0 0 0 0;
+}
+
+.formulario_titulo-principal {
+	color: #d0a75f;
+    border-bottom: 1px solid rgba(208, 167, 95, 0.15);
+}
+
+.formulario label{
+	display: block;
+	color: #585858;
+	padding: 5px 10px;
+}
+
+.formulario input,.formulario select {
+	height: 59px;
+	text-align: center;
+}
+
+.formulario__titulo {
+	color: #928853;
+	border-bottom: 1px solid #928853;
+	margin: 50px 0;
+	padding: 5px;
+	font-family: DancingScript; 
+}
+
+.formulario__categoria {
+	margin-bottom: 50px;
+}
+
+.formulario__campo {
+	margin-top: 30px;
+}
+
+/*----------------------------------------------
+     item
+----------------------------------------------*/
+
+.item {
+	padding: 30px 0;
+}
+
+.item__mudar {
+	margin-bottom: 20px;
+	display: inline-block;
+	position: relative;	
+}
+
+.item__mudar-foto {
+ 	position: absolute;
+ 	bottom: 0;
+ 	left: 0;
+ 	right: 0;
+ 	width: 100%;
+ 	margin: 0;
+    border: 0;
+    padding: 10px 0;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.77);
+    color: rgba(255,255,255,0.90);
+    outline: none;
+    visibility: hidden;
+    transition: 0.5s ease-in;
+    opacity: 0;
+}
+
+.item__mudar:hover .item__mudar-foto {
+    visibility: visible;
+    opacity: 100;
+    color: #fff;
+    outline: none;
+    text-decoration: none;
+}
+
+.item__mudar:hover img {
+    filter: grayscale(50%) contrast(150%);
+}
+
+
+.item__informaçoes {
+	padding-left: 20px;
+	
+}
+
+.item__informaçoes h2 {
+	color: #a93125;
+}
+
+.item__informaçoes h4 {
+	color: #b97974;
+	margin-bottom: 40px;
+}
+
+.item__informaçoes p {
+	color: #989898;
+}
+
+.item__botoes {
+	margin-top: 30px;
+	padding-top: 30px;
+	border-top: 1px solid #ded9d0;
+}
+
+.item__botoes a {
+	width: 100%;
+	margin: 0;
+}
+
+.item__botao {
+	width: 100%;
+	margin: 0;
+}
+
+@media (max-width: 767px) {
+	.item__botoes a{		
+		margin-top: 10px
+	}
+}
+
+/*----------------------------------------------
+    botao-alterar
+----------------------------------------------*/
+
+.botao-alterar span {
+	margin-right: 10px;
+}
+
+/*----------------------------------------------
+     botao-img
+----------------------------------------------*/
+
+.botao-img {
+	padding: 15px;
+	font-size: 18px;
+}
+
+/*----------------------------------------------
+     excluir-pro
+----------------------------------------------*/
+
+.excluir-pro__titulo {
+    color: #c11100;
+}
+
+.excluir-pro__botao {
+	margin: 5px 0;
+	display: block;
+	width: 100%;
+}
+
+.excluir-pro__botao-fechar {
+	font-size: 5rem;
+	color: #800c00;
+	opacity: 1;
+}
+
+.excluir-pro__botao-fechar:hover , .excluir-end__botao-fechar:focus {
+	outline: none;
+	color: #bb1100;
+	opacity: 1;
+}

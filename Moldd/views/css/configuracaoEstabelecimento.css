@@ -1,0 +1,267 @@
+@font-face {
+	font-family: DancingScript;
+	src: url(../fonts/DancingScript-Regular.ttf);
+}
+
+@font-face {
+	font-family: RalewayRegular;
+	src: url(../fonts/Raleway-Regular.ttf);
+}
+
+body {
+	background-color: #efefef;
+	font-family: RalewayRegular;
+	background-image: url(../imagens/fundo.jpg);   
+    background-size:100%;
+    background-repeat: repeat-y;
+}
+
+.layout-configuracao {
+	padding: 70px 0;
+	background-color: #fff;
+}
+
+.layout-configuracao-parte-dois {
+	border-top: 1px solid #b7a54a;
+    border-bottom: 1px solid #b7a54a;
+    padding: 50px 0;
+    width: 100%;
+}
+
+.layout-mudar-senha {
+	padding: 60px 0 40px 0;
+    margin-top: 60px;
+    border-top: 1px solid #b7a54a;
+}
+
+/*---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---*/
+
+
+/*----------------------------------------------
+     Botão
+----------------------------------------------*/
+
+.botao{
+	float: right;	
+	border:none;
+	padding: 10px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 2rem;
+	transition: all 0.5s ease-in;
+	outline: none;
+	position: relative;
+	bottom: 0;	
+	text-align: center;
+	margin: 5px;
+	
+}
+
+.botao:hover , .botao:focus {
+	position: relative;
+	bottom: 5px;
+}
+
+.botao--vermelho {
+	background-color: #a93125;
+}
+
+.botao--vermelho:hover , .botao--vermelho:focus {
+	background-color: #d82513;
+	box-shadow:  0 5px 5px rgba(0, 0, 0, 0.15);
+	color: #fff;
+	text-decoration: none;
+}
+
+.botao--amarelo {
+	background-color: #d0a75f;
+}
+
+.botao--amarelo:hover , .botao--amarelo:focus {
+	background-color: #f1b245;
+	box-shadow:  0 5px 5px rgba(0, 0, 0, 0.15);	
+	color: #fff;
+	text-decoration: none;
+}
+
+/*----------------------------------------------
+    Formulario
+----------------------------------------------*/
+
+.formulario label{
+	display: block;
+	color: #585858;
+	padding: 5px 10px;
+}
+
+.formulario input{
+	height: 59px;
+	text-align: center;
+}
+
+/*----------------------------------------------
+     Configuracao
+----------------------------------------------*/
+
+.configuracao__titulo {
+	color: #b7a54a;
+	padding: 5px;
+	font-family: DancingScript;
+	border-bottom: 1px solid #b7a54a;
+	margin-bottom: 70px;
+	text-align: left;
+}
+
+.configuracao__foto-perfil {
+	display: inline-block;
+	position: relative;
+}
+
+.configuracao__mudar-foto {
+ 	position: absolute;
+ 	bottom: 0;
+ 	left: 0;
+ 	right: 0;
+ 	width: 100%;
+ 	margin: 0;
+    border: 0;
+    padding: 10px 0;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.77);
+    color: rgba(255,255,255,0.90);
+    outline: none;
+    visibility: hidden;
+    transition: 0.5s ease-in;
+    opacity: 0;
+}
+
+.configuracao__foto-perfil:hover .configuracao__mudar-foto {
+    visibility: visible;
+    opacity: 100;
+    color: #fff;
+    outline: none;
+    text-decoration: none;
+}
+
+.configuracao__foto-perfil:hover img {
+    filter: grayscale(50%) contrast(150%);
+}
+
+.configuracao__painel{
+	height: 250px;
+}
+
+.configuracao__painel-outros {
+	padding: 0px 0 70px 0;;
+}
+
+.panel-title .configuracao__botao-editar {
+	float: right;
+	color: #8e7000;	
+}
+
+.configuracao__painel-cabecalho--senha .panel-title .configuracao__botao-editar {
+	float: none;
+}
+
+.configuracao__botao-editar:hover , .configuracao__botao-editar:focus {
+	text-decoration: none;
+}
+
+.configuracao__painel-grupo {
+	position: relative;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.configuracao__campo {
+	margin-top: 12px;
+}
+
+.configuracao__botao {
+	width: 100%
+}
+
+.panel-default .configuracao__painel-cabecalho {	
+    background-color: #fff;
+    border:none;
+    padding: 25px;
+}
+
+.panel-default .configuracao__painel-cabecalho--senha {
+	background-color: #f9f2e8;
+}
+
+.panel-default .configuracao__painel-corpo{	
+    border-top: 1px solid #ddd;
+}
+
+.configuracao__salvar {
+	margin-bottom: 10px;
+}
+
+.configuracao__dia {
+	padding: 5px;
+    background-color: #fffdc4;
+    margin: 10px 0;
+}
+
+.configuracao__dia--nulo {
+	padding: 5px;
+    background-color: #ffddc4;
+    margin: 10px 0;
+}
+
+.configuracao__dia-checkbox {
+	margin: 30px;
+    color: #8e7000;
+    text-align: center;
+    padding: 5px;
+}
+
+.configuracao__dia-checkbox--nulo {
+	margin: 30px;
+    color: #ca5d00;
+    text-align: center;
+    padding: 5px;
+}
+
+@media (max-width: 767px) {
+	.configuracao__painel {
+	    height: 550px;
+	}
+
+	.panel-title .configuracao__botao-editar {
+		float: none;
+		display: block;
+    	text-align: center;
+    	margin: 15px 0;
+	}
+}
+
+/*----------------------------------------------
+     Configuracao-parte-dois
+----------------------------------------------*/
+
+.configuracao-parte-dois {
+	margin: 30px 0;
+}
+
+.configuracao-parte-dois__botao {
+	width: 90%;
+	margin: 50px 5% 30px;
+}
+
+/*----------------------------------------------
+    mudar-senha
+----------------------------------------------*/
+
+.panel-default .mudar-senha {	
+    border-top: 1px solid #ddd;
+}
+
+.mudar-senha__botao {
+	width: 100%
+}

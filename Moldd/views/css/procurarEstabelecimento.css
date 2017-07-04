@@ -1,0 +1,250 @@
+@font-face {
+	font-family: DancingScript;
+	src: url(../fonts/DancingScript-Regular.ttf);
+}
+
+@font-face {
+	font-family: RalewayRegular;
+	src: url(../fonts/Raleway-Regular.ttf);
+}
+
+body {
+	background-color: #efefef;
+	font-family: RalewayRegular;
+	background-image: url(../imagens/fundo.jpg);
+	background-size:100%;
+	background-repeat: repeat-y;
+}
+
+.layout-aviso-adicionar-endereco {
+	padding: 70px 0;
+	background-image: url(../imagens/fundo.jpg);
+	background-size:100%;
+	background-repeat: no-repeat;
+}
+
+.layout-filtro {
+	border-bottom: 1px solid #ded9d0;
+	border-top: 1px solid #ded9d0;
+	background-color: #fff;
+}
+
+.layout-estabelecimento {
+	margin: 70px 0;
+	border-bottom: 1px solid #ded9d0;
+	border-top: 1px solid #ded9d0;
+	background-color: #fff;
+}
+
+.layout-rodape {
+	background: #131313;
+	box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.16);
+	text-align: center;
+	color: #fff;
+	line-height: 100px;
+	height: 100px;
+	border-top: 1px solid #212121;
+}
+
+/*---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---*/
+
+
+
+/*----------------------------------------------
+     Botão
+----------------------------------------------*/
+
+.botao{
+	float: right;
+	border:none;
+	padding: 10px 30px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 2rem;
+	transition: all 0.5s ease-in;
+	outline: none;
+	position: relative;
+	bottom: 0;
+	text-align: center;
+	margin: 0;
+
+}
+
+.botao:hover , .botao:focus {
+	position: relative;
+	bottom: 5px;
+}
+
+.botao--vermelho {
+	background-color: #a93125;
+}
+
+.botao--vermelho:hover , .botao--vermelho:focus {
+	background-color: #d82513;
+	box-shadow:  0 5px 5px rgba(0, 0, 0, 0.15);
+	color: #fff;
+	text-decoration: none;
+}
+
+.botao--amarelo {
+	background-color: #d0a75f;
+}
+
+.botao--amarelo:hover , .botao--amarelo:focus {
+	background-color: #f1b245;
+	box-shadow:  0 5px 5px rgba(0, 0, 0, 0.15);
+	color: #fff;
+	text-decoration: none;
+}
+
+/*----------------------------------------------
+     titulo-pag
+----------------------------------------------*/
+
+.titulo-pag {
+	font-size: 2.7rem;
+    color: #dcc557;
+    margin: 0;
+    padding: 50px 30px 0 30px;
+    border-bottom: 1px solid #dcc557;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*----------------------------------------------
+     Aviso-adicionar-endereco 
+----------------------------------------------*/
+
+.aviso-adicionar-endereco a {
+	width: 100%;
+}
+
+/*----------------------------------------------
+     Texto Novo Endereco
+----------------------------------------------*/
+
+.texto-novo-endereco {
+	font-size: 2rem;
+	color: #fff;
+}
+
+
+/*----------------------------------------------
+     Filtro
+----------------------------------------------*/
+.filtro {
+	margin: 30px 0;
+}
+
+.filtro__titulo {
+	margin-bottom: 30px;
+	border-bottom: 1px solid #ded9d0;
+	color: rgb(149, 41, 0);
+	font-family: DancingScript;
+}
+
+.filtro__recado {
+	color: rgba(162, 96, 0, 0.92);
+}
+
+.filtro__campo {
+	margin: 10px 0;
+	transition: 0.5s ease-in;
+}
+
+/*----------------------------------------------
+     Selecionar Endereco
+----------------------------------------------*/
+
+.selecionar-endereco {
+	margin: 30px 0;
+}
+
+/*----------------------------------------------
+     Estabelecimento
+----------------------------------------------*/
+
+.estabelecimento {
+	padding: 30px 0;
+}
+
+.estabelecimento__foto {
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
+.estabelecimento__foto img {
+	display: inline-block;
+	position: relative;
+	/*left: 50%;
+	transform: translate(-50%);*/
+}
+
+.estabelecimento-informacao {
+	padding-left: 20px;
+
+}
+
+.estabelecimento-informacao h2 {
+	color: #a93125;
+	border-bottom: 1px solid #d4d4d4;
+}
+
+.estabelecimento-informacao h4 {
+	color: #b97974;
+	margin-bottom: 40px;
+	margin-top: 0;
+	display: inline-block;
+}
+
+.estabelecimento-informacao img {
+	float: right;
+	margin-top: 0;
+}
+
+.estabelecimento-informacao p {
+	color: #989898;
+}
+
+.estabelecimento-botoes {
+	margin-top: 30px;
+	padding-top: 30px;
+	border-top: 1px solid #ded9d0;
+}
+
+.estabelecimento-botoes a {
+	width: 100%;
+	margin: 0;
+}
+
+@media (max-width: 767px) {
+	.estabelecimento-botoes a{
+		margin-top: 10px
+	}
+}
+
+/*----------------------------------------------
+     alerta
+----------------------------------------------*/
+
+.alerta {
+	margin: 70px 0 50px 0;
+	text-align: center;
+}
+
+.alerta a {
+	color: #ff4a4a;
+}
+
+.alerta a:hover {
+	color: #ada000;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+/*----------------------------------------------
+     paginacao
+----------------------------------------------*/
+
+.paginacao__pag {
+	cursor: pointer;
+}

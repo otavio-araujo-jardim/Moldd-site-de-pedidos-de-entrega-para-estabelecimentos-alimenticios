@@ -1,0 +1,33 @@
+html {
+    font-size: 62.5%;
+}
+
+body{    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+}
+
+/*----------------------------------------------
+     botao-voltar-topo
+----------------------------------------------*/
+
+.botao-voltar-topo {
+	background-color: rgb(255, 255, 255);
+    color: #a93125;
+    font-size: 30px;
+    border-style: none;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    display: none;
+    outline: none;
+    z-index: 100;
+}
+
+.botao-voltar-topo:hover, .botao-voltar-topo:focus {
+	color: #a97a25;
+	outline: none;
+}

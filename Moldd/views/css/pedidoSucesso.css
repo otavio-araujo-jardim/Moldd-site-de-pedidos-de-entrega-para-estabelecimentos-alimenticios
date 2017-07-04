@@ -1,0 +1,129 @@
+@font-face {
+	font-family: DancingScript;
+	src: url(../fonts/DancingScript-Regular.ttf);
+}
+
+@font-face {
+	font-family: RalewayRegular;
+	src: url(../fonts/Raleway-Regular.ttf);
+}
+
+body {
+	background-color: #efefef;
+	font-family: RalewayRegular;
+	background-image: url(../imagens/fundo.jpg);   
+    background-size:100%;
+    background-repeat: repeat-y;
+}
+
+
+
+/*---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---*/
+
+
+
+/*----------------------------------------------
+     Botão
+----------------------------------------------*/
+
+.botao{
+	float: right;	
+	border:none;
+	padding: 10px 30px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 2rem;
+	transition: all 0.5s ease-in;
+	outline: none;
+	position: relative;
+	bottom: 0;	
+	text-align: center;
+	margin: 5px;
+	
+}
+
+.botao:hover , .botao:focus {
+	position: relative;
+	bottom: 5px;
+}
+
+.botao--vermelho {
+	background-color: #a93125;
+}
+
+.botao--vermelho:hover , .botao--vermelho:focus {
+	background-color: #d82513;
+	box-shadow:  0 5px 5px rgba(0, 0, 0, 0.15);
+	color: #fff;
+	text-decoration: none;
+}
+
+.botao--amarelo {
+	background-color: #d0a75f;
+}
+
+.botao--amarelo:hover , .botao--amarelo:focus {
+	background-color: #f1b245;
+	box-shadow:  0 5px 5px rgba(0, 0, 0, 0.15);	
+	color: #fff;
+	text-decoration: none;
+}
+
+/*----------------------------------------------
+     sucesso
+----------------------------------------------*/
+
+.sucesso {
+	margin: 70px 0;
+    background-color: #fff;
+    padding: 50px;
+}
+
+.sucesso__caixa-texto {
+	height: 350px;	
+}
+
+.sucesso__texto {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 3rem;
+    font-family: DancingScript;
+    color: #8e8e8e;
+    text-align: left;
+}
+
+.sucesso__texto strong {
+	color: #75a558;
+}
+
+.sucesso__caixa-botao {
+	height: 350px;
+	border-left: 1px solid #ddd;
+}
+
+.sucesso__botao {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	float: none;
+}
+
+@media(max-width: 1200px) {
+	.sucesso__texto {
+	    text-align: center;
+	}
+
+	.sucesso__caixa-texto {
+		height: 100px;	
+	}
+
+	.sucesso__caixa-botao {
+		height: 100px;
+		border-left: none;
+	}
+
+	.sucesso {
+		padding: 50px 0;
+	}
+}

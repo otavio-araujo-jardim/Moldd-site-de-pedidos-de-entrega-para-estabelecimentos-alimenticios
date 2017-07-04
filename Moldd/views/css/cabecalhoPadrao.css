@@ -1,0 +1,92 @@
+.layout-voltar {
+	height: 50px;
+	background-color: rgba(0, 0, 0, 0.54);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+}
+
+.layout-cabecalho {
+	background-image: url(../imagens/FundoCabecalho.jpg);   
+    background-size:100%;
+    background-repeat: repeat-y;
+    border-bottom: 1px solid #fff;   
+}
+
+/*----------------------------------------------
+     parallax
+----------------------------------------------*/
+
+.parallax {
+	background-attachment: fixed;
+}
+
+/*----------------------------------------------
+     voltar
+----------------------------------------------*/
+.voltar__caixa-botao {
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    transition: 0.5s ease-in;
+}
+
+.voltar__caixa-botao:hover {
+	background-color: rgba(255, 0, 0, 0.54);	
+}
+
+.voltar__botao:hover , .voltar__botao:focus {
+	text-decoration: none;
+	color: #fff;
+	outline: none;
+}
+
+.voltar__botao {
+	height: 49px;
+	margin: 0;
+    float: left;    
+    padding: 10.5px;		
+	color: #fff;
+	font-size: 2rem;
+	transition: 0.5s ease-in;
+	outline: none;			
+	text-align: center;	
+}
+
+.voltar__botao img {
+	vertical-align: baseline;
+	margin-right: 10px
+}
+
+/*----------------------------------------------
+     Cabecalho
+----------------------------------------------*/
+
+.cabecalho {
+	margin-top: 50px
+}
+
+.cabecalho__titulo {
+	color: #fff;
+	transition: 0.5s ease-in;
+	margin-left: 15px;
+}
+
+@media (max-width: 767px) {
+	.cabecalho__titulo {
+		font-size: 2rem;
+	}
+}
+
+/*----------------------------------------------
+     Logo
+----------------------------------------------*/
+
+
+.logo a {
+	outline: 0;
+}
+
+.logo__img {
+	width: 200px;
+	-webkit-filter: drop-shadow(5px 5px 10px #000);
+    filter:         drop-shadow(5px 5px 10px #000);
+}

@@ -1,0 +1,175 @@
+@font-face {
+	font-family: DancingScript;
+	src: url(../fonts/DancingScript-Regular.ttf);
+}
+
+@font-face {
+	font-family: RalewayRegular;
+	src: url(../fonts/Raleway-Regular.ttf);
+}
+
+.layout-cadastro {
+	padding: 50px 0;
+}
+
+/*---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---*/
+
+/*----------------------------------------------
+     Botão
+----------------------------------------------*/
+
+.botao{
+	float: right;	
+	border:none;
+	padding: 10px 30px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 2rem;
+	transition: 0.5s ease-in;
+	outline: none;
+	position: relative;
+	bottom: 0;	
+	text-align: center;
+	margin-top: 30px;
+}
+
+.botao:hover , .botao:focus {
+	position: relative;
+	bottom: 5px;
+}
+
+.botao--vermelho {
+	background-color: #a93125;
+}
+
+.botao--vermelho:hover , .botao--vermelho:focus {
+	background-color: #d82513;
+	box-shadow:  0 5px 5px rgba(0, 0, 0, 0.15);
+	color: #fff;
+	text-decoration: none;
+}
+
+.botao--amarelo {
+	background-color: #d0a75f;
+}
+
+.botao--amarelo:hover , .botao--amarelo:focus {
+	background-color: #f1b245;
+	box-shadow:  0 5px 5px rgba(0, 0, 0, 0.15);	
+	color: #fff;
+	text-decoration: none;
+}
+
+@media (max-width: 767px) {
+	.botao {
+		width: 100%;
+	}
+}
+
+/*----------------------------------------------
+     cadastro
+----------------------------------------------*/
+
+.cadastro__titulo {
+	color: #928853;
+	border-bottom: 1px solid #928853;
+	margin: 50px 0 30px;
+	padding: 5px;
+	font-family: DancingScript; 
+	text-align: left;
+}
+
+.cadastro__foto-perfil {
+	display: inline-block;
+	position: relative;
+}
+
+.cadastro__mudar-foto {
+ 	position: absolute;
+ 	bottom: 0;
+ 	left: 0;
+ 	right: 0;
+ 	width: 100%;
+ 	margin: 0;
+    border: 0;
+    padding: 10px 0;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.77);
+    color: rgba(255,255,255,0.90);
+    outline: none;
+    visibility: hidden;
+    transition: 0.5s ease-in;
+    opacity: 0;
+}
+
+.cadastro__foto-perfil img{
+	filter: grayscale(0);
+	transition: 0.5s ease-in;
+}
+
+.cadastro__foto-perfil:hover .cadastro__mudar-foto {
+    visibility: visible;
+    opacity: 100;    
+}
+
+.cadastro__foto-perfil:hover img {
+    filter: grayscale(50%) contrast(150%);;
+}
+
+/*----------------------------------------------
+     Formulario
+----------------------------------------------*/
+
+.formulario {
+	margin-top: 20px;
+}
+
+.formulario label{
+	display: block;
+	color: #585858;
+	padding: 5px 10px;
+}
+
+.formulario input,.formulario select {
+	height: 59px;
+	text-align: center;
+}
+
+.formulario__titulo {
+	color: #928853;
+	border-bottom: 1px solid #928853;
+	margin: 50px 0;
+	padding: 5px;
+	font-family: DancingScript; 
+}
+
+.formulario__categoria {
+	margin-bottom: 50px;
+}
+
+.formulario .formulario__checkbox {
+	height: auto;
+}
+
+.formulario__dia {
+	display: none;
+	opacity: 0;
+	transition: all 0.5s ease-in;
+}
+
+.formulario__caixa-dia {
+    padding: 10px;
+	background-color: #fff1d4;
+    margin: 5px 0;
+}
+
+.formulario__texto-dias {
+    text-align: left;
+    margin: 30px;
+    color: #7b5600;
+}
+
+.formulario__categoria--horario {
+    background-color: #ffe6ab;;
+    padding: 30px 0;
+}

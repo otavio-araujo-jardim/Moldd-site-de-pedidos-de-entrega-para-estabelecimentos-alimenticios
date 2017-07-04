@@ -1,0 +1,188 @@
+@font-face {
+	font-family: DancingScript;
+	src: url(../fonts/DancingScript-Regular.ttf);
+}
+
+@font-face {
+	font-family: RalewayRegular;
+	src: url(../fonts/Raleway-Regular.ttf);
+}
+
+.layout-fundo {
+	padding: 0;
+	background-image: url(../imagens/fundo.jpg);   
+    background-size:100%;
+    background-repeat: repeat-y;	
+}
+
+.layout-lista {
+	margin: 50px 0;
+	background-color: #fff;
+}
+
+.layout-salvar {
+	background-color: #fff;	
+}
+
+/*---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---*/
+
+
+/*----------------------------------------------
+     Botão
+----------------------------------------------*/
+
+.botao{
+	float: right;	
+	border:none;
+	padding: 10px 30px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 2rem;
+	transition: 0.5s ease-in;
+	outline: none;
+	position: relative;
+	bottom: 0;	
+	text-align: center;
+	margin: 30px 0;
+}
+
+.botao:hover , .botao:focus {
+	position: relative;
+	bottom: 5px;
+}
+
+.botao--vermelho {
+	background-color: #a93125;
+}
+
+.botao--vermelho:hover , .botao--vermelho:focus {
+	background-color: #d82513;
+	box-shadow:  0 5px 5px rgba(0, 0, 0, 0.15);
+	color: #fff;
+	text-decoration: none;
+}
+
+.botao--amarelo {
+	background-color: #d0a75f;
+}
+
+.botao--amarelo:hover , .botao--amarelo:focus {
+	background-color: #f1b245;
+	box-shadow:  0 5px 5px rgba(0, 0, 0, 0.15);	
+	color: #fff;
+	text-decoration: none;
+}
+
+@media (max-width: 767px) {
+	.botao {
+		width: 100%;
+	}
+}
+
+/*----------------------------------------------
+     Cardapio
+----------------------------------------------*/
+
+.cardapio {
+	padding-top: 100px; 
+}
+
+/*----------------------------------------------
+     item
+----------------------------------------------*/
+
+.item {
+	padding: 30px 0;
+	height: 310px;
+}
+
+.item_caixa-botao {
+	height: 250px;
+}
+
+.item__botao {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.item__botao-vermelho , .item__botao-verde {
+	background-color: #ccc;
+	padding: 15px 30px;
+	font-size: 2rem;
+}
+
+.item__botao-vermelho.active , .item__botao-vermelho.active:hover , .item__botao-vermelho.active.focus {
+	background-color: #5f0000;
+	border-color: #400000;
+	outline: none;
+	color: #ffbcbc;
+}
+
+.item__botao-verde.active , .item__botao-verde.active:hover , .item__botao-verde.active.focus {
+	background-color: #1c5f00;
+	border-color: #0a4000;
+	outline: none;
+	color: #caffb9;
+}
+
+.item__foto {	
+	height: 100%;	
+	display: inline-block;	
+}
+
+.item__foto img {
+	display: inline-block;
+	position: relative;
+}
+
+.item__informaçoes {
+	padding-left: 20px;
+	
+}
+
+.item__informaçoes h2 {
+	color: #a93125;
+}
+
+.item__informaçoes h4 {
+	color: #b97974;
+	margin-bottom: 40px;
+}
+
+.item__informaçoes p {
+	color: #989898;
+}
+
+.item-botoes {
+	margin-top: 30px;
+	padding-top: 30px;
+	border-top: 1px solid #ded9d0;
+}
+
+.item-botoes a {
+	width: 100%;
+	margin: 0;
+}
+
+@media (max-width: 767px) {
+	.item-botoes a{		
+		margin-top: 10px
+	}	
+}
+
+@media (max-width: 1200px) {
+	.item__botao-vermelho , .item__botao-verde {		
+		padding: 10px 20px;
+		font-size: 1.5rem;
+	}
+}
+
+
+/*----------------------------------------------
+     alerta
+----------------------------------------------*/
+
+.alerta {
+	margin: 70px 0 50px 0;
+	text-align: center;
+}

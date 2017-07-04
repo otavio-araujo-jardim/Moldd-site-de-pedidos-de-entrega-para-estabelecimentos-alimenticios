@@ -1,0 +1,234 @@
+@font-face {
+	font-family: DancingScript;
+	src: url(../fonts/DancingScript-Regular.ttf);
+}
+
+@font-face {
+	font-family: RalewayRegular;
+	src: url(../fonts/Raleway-Regular.ttf);
+}
+
+.layout-adicionar-imagem {
+	padding: 100px 0;
+}
+
+.layout-rodape {	
+	background: #131313;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.16);
+    text-align: center;
+    color: #fff;
+    line-height: 100px;   
+    height: 100px;
+    border-top: 1px solid #212121;
+}
+
+.layout-galeria {
+	background-color: #fff;
+	padding: 70px 0;
+}
+
+/*---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---*/
+
+/*----------------------------------------------
+     Botão
+----------------------------------------------*/
+
+.botao{
+	width: 100%;
+	float: right;	
+	border:none;
+	padding: 10px 30px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 2rem;
+	transition: 0.5s ease-in;
+	outline: none;
+	position: relative;
+	bottom: 0;	
+	text-align: center;
+	margin-top: 30px;
+}
+
+.botao:hover , .botao:focus {
+	position: relative;
+	bottom: 5px;
+}
+
+.botao--vermelho {
+	background-color: #a93125;
+}
+
+.botao--vermelho:hover , .botao--vermelho:focus {
+	background-color: #d82513;
+	box-shadow:  0 5px 5px rgba(0, 0, 0, 0.15);
+	color: #fff;
+	text-decoration: none;
+}
+
+.botao--amarelo {
+	background-color: #d0a75f;
+}
+
+.botao--amarelo:hover , .botao--amarelo:focus {
+	background-color: #f1b245;
+	box-shadow:  0 5px 5px rgba(0, 0, 0, 0.15);	
+	color: #fff;
+	text-decoration: none;
+}
+
+.botao--pular {
+	width: 100%;
+	margin: 0;
+}
+
+@media (max-width: 767px) {
+	.botao {
+		width: 100%;
+	}
+}
+
+/*----------------------------------------------
+     Formulario
+----------------------------------------------*/
+
+.formulario__titulo {
+	color: #928853;
+	border-bottom: 1px solid #928853;
+	margin: 20px 0;
+	padding: 5px;
+	font-family: DancingScript; 
+	text-align: left;
+}
+
+.formulario__caixa {
+	height: 225px;
+    margin: 0;
+}
+
+.formulario__campos {
+	margin: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.formulario label{
+	display: block;
+	color: #585858;
+	padding: 5px 10px;
+}
+
+.formulario input{
+	height: 59px;
+	text-align: center;
+}
+
+/*----------------------------------------------
+     botao-img
+----------------------------------------------*/
+
+.botao-img {
+	padding: 15px;
+	font-size: 18px;
+}
+
+/*----------------------------------------------
+     Galeria
+----------------------------------------------*/
+.galeria__foto {
+	display: inline-block;
+	margin: 10px 10px 10px 10px;
+}
+
+.galeria__excluir {
+	padding: 10px;
+    background-color: #f9e8c9;
+    border-bottom: 1px solid #FFF;
+    background: -webkit-linear-gradient(to right, #d0d0d0 , #efefef , #a7a5a5);
+    background: -o-linear-gradient(to right, #d0d0d0 , #efefef , #a7a5a5);
+    background: -moz-linear-gradient(to right, #d0d0d0 , #efefef , #a7a5a5);
+    background: linear-gradient(to right, #d0d0d0 , #efefef , #a7a5a5);
+}
+
+.galeria__excluir span {
+    font-size: 15px;
+	color: #c40000;
+}
+
+.galeria__botao-excluir {
+	border: none;
+    background: transparent;
+    font-family: DancingScript;
+    padding: 5px;
+}
+
+.galeria__botao-excluir:hover , .galeria__botao-excluir:focus {
+	color: #c40000;
+	outline: none;
+}
+
+.galeria__botao {
+	position: relative;    
+    padding: 0;
+    border: none;
+    background: transparent;
+}
+
+.galeria__botao-imagem {	
+	height: 250px;	
+	transition: all 0.3s ease-in;
+}
+
+.galeria__botao:hover .galeria__botao-imagem {
+	-ms-filter: grayscale(90%) blur(5px) brightness(0.2);
+	-webkit-filter: grayscale(90%) blur(5px) brightness(0.2);
+	filter: grayscale(90%) blur(5px) brightness(0.2);
+}
+
+.galeria__botao:hover , .galeria__botao:focus {
+	outline: none;
+}
+
+
+.galeria__aviso {
+	width: 95%;
+	opacity: 0;
+	transition: all 0.3s ease-in;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.galeria__botao:hover .galeria__aviso {
+	opacity: 100;
+}
+
+.galeria__botao-texto {
+	text-shadow: 1px 1px 1px #000;
+	font-size: 1.3rem	
+}
+
+.galeria__botao-texto {
+	color: #fff;
+}
+
+.galeria__imagem-original {
+	max-width: 80%;
+	margin: 70px 0;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 2px 2px 200px 1px rgba(0, 0, 0, 0.66);
+}
+
+@media (max-width: 767px) {
+	.galeria__botao {
+		width: 100%;
+		margin: 10px 0;
+	}
+	.galeria__botao-imagem {
+		width: 100%;
+		height: auto;
+	}
+}

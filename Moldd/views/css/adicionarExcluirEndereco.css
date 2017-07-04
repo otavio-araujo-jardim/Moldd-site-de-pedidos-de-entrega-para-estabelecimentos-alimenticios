@@ -1,0 +1,216 @@
+@font-face {
+	font-family: DancingScript;
+	src: url(../fonts/DancingScript-Regular.ttf);
+}
+
+@font-face {
+	font-family: RalewayRegular;
+	src: url(../fonts/Raleway-Regular.ttf);
+}
+
+.layout-cadastro {
+	padding: 50px 0;
+}
+
+.layout-lista {
+	background-image: url(../imagens/fundo.jpg);   
+    background-size:100%;
+    background-repeat: repeat-y; 
+    padding-top: 70px;
+}
+
+.layout-rodape {	
+	background: #131313;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.16);
+    text-align: center;
+    color: #fff;
+    line-height: 100px;   
+    height: 100px;
+    border-top: 1px solid #212121;
+}
+
+/*---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---*/
+
+
+
+/*----------------------------------------------
+     Botão
+----------------------------------------------*/
+
+.botao{
+	float: right;
+	width: 100%;
+	border:none;
+	padding: 10px 30px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 2rem;
+	transition: 0.5s ease-in;
+	outline: none;
+	position: relative;
+	bottom: 0;	
+	text-align: center;
+	margin-top: 30px;
+}
+
+.botao:hover , .botao:focus {
+	position: relative;
+	bottom: 5px;
+}
+
+.botao--vermelho {
+	background-color: #a93125;
+}
+
+.botao--vermelho:hover , .botao--vermelho:focus {
+	background-color: #d82513;
+	box-shadow:  0 5px 5px rgba(0, 0, 0, 0.15);
+	color: #fff;
+	text-decoration: none;
+}
+
+.botao--amarelo {
+	background-color: #d0a75f;
+}
+
+.botao--amarelo:hover , .botao--amarelo:focus {
+	background-color: #f1b245;
+	box-shadow:  0 5px 5px rgba(0, 0, 0, 0.15);	
+	color: #fff;
+	text-decoration: none;
+}
+
+/*----------------------------------------------
+     Formulario
+----------------------------------------------*/
+
+.formulario {
+	margin-top: 20px;
+}
+
+.formulario label{
+	display: block;
+	color: #585858;
+	padding: 5px 10px;
+}
+
+.formulario input{
+	height: 59px;
+	text-align: center;
+}
+
+/*----------------------------------------------
+     Item
+----------------------------------------------*/
+
+.item {
+    padding: 30px;
+    background-color: #fff;
+    margin: 30px 0;
+    position: relative;
+    border-radius: 50px 10px 10px 10px;
+}
+
+.item__botao-excluir {
+	cursor: pointer;
+	float: right;	
+	border:none;	
+	border-radius: 5px;
+	color: #960000;
+	font-size: 2.5rem;
+	transition: 0.5s ease-in;
+	outline: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align: center;	
+	background-color: #fff;
+	margin: 5px;
+	z-index: 7;
+	font-family: DancingScript;
+}
+
+.item__botao-excluir:hover , .item__botao-excluir:focus {
+	color: #e60000;	
+    text-decoration: none;
+}
+
+.item__simbolo {
+	font-size: 12rem;
+	color: #a93125;
+}
+
+.item__informaçoes p {
+	margin-bottom: 10px;
+	transition: 0.5s ease-in;
+}
+
+.item__cep, .item__estado, .item__endereco, .item__numero, .item__comp {
+	position: relative;
+	left: 0;
+	transition: 0.5s ease-in;
+}
+
+@media (min-width: 1200px) {
+
+	.item__cep {
+		position: relative;
+		left: -57px;		
+	}
+
+	.item__estado {
+		position: relative;
+		left: -33px;
+	}
+
+	.item__endereco {
+		position: relative;
+		left: -33px;
+	}
+
+	.item__numero {
+		position: relative;
+		left: -50px;
+	}
+
+	.item__comp {
+		position: relative;
+		left: -75px;
+	}
+
+}
+
+/*----------------------------------------------
+     alerta
+----------------------------------------------*/
+
+.alerta {
+	margin: 70px 0 50px 0;
+	text-align: center;
+}
+
+
+/*----------------------------------------------
+     excluir-end
+----------------------------------------------*/
+
+.excluir-end__titulo {
+    color: #c11100;
+}
+
+.excluir-end__botao {
+	margin: 5px 0;
+	display: block;
+}
+
+.excluir-end__botao-fechar {
+	font-size: 5rem;
+	color: #800c00;
+	opacity: 1;
+}
+
+.excluir-end__botao-fechar:hover , .excluir-end__botao-fechar:focus {
+	outline: none;
+	color: #bb1100;
+	opacity: 1;
+}

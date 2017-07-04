@@ -1,0 +1,282 @@
+@font-face {
+	font-family: DancingScript;
+	src: url(../fonts/DancingScript-Regular.ttf);
+}
+
+@font-face {
+	font-family: RalewayRegular;
+	src: url(../fonts/Raleway-Regular.ttf);
+}
+
+body{
+	margin: 50px 0 0 0;
+    background-image: url(../imagens/fundo.jpg);
+    background-size: 100% ;
+    background-repeat: repeat-y;
+    font-family: RalewayRegular;
+}
+
+.layout-video {
+	background-color: rgba(0, 0, 0, 0.70);
+	padding: 70px 0;
+}
+
+.layout-video h1{
+	margin: 0 0 40px 0;
+	font-family: DancingScript;
+	font-size: 4rem;
+	color: #505050;
+}
+
+.layout-rodape {	
+	background: #131313;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.16);
+    text-align: center;
+    color: #fff;
+    line-height: 100px;   
+    height: 100px;
+    border-top: 1px solid #212121;
+}
+
+
+/*---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---===#@#===---*/
+
+/*----------------------------------------------
+     menu-login
+----------------------------------------------*/
+
+.menu-login {
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 51px;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.95);
+    border:none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.37);
+    margin: 0;
+}
+
+.menu-login__img {
+	height: 50px;
+}
+
+.menu-login__caixa {
+	background-color: #000;
+}
+
+.menu-login__lista {
+	float: right;
+}
+
+.navbar-inverse .navbar-nav>li>.menu-login__item:hover, .navbar-inverse .navbar-nav>li>.menu-login__item:focus  {
+	background-color: #695a3e;
+	outline: none;
+}
+
+@media (max-width: 767px) {
+	.menu-login__lista {
+		float: none;
+	}
+}
+
+/*----------------------------------------------
+     Texto Principal
+----------------------------------------------*/
+
+.texto-principal {	
+	margin-top: 50px;
+	font-size: 1rem;
+	padding: 30px
+}
+
+.texto-principal__titulo {
+	color: #ffe3af;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #ffe3af;
+	font-size: 5em;
+	font-family: DancingScript;
+}
+
+.texto-principal__conteudo {
+	color: #f1e9d5;
+	text-align: justify;
+	font-size: 1.4em;
+}
+
+@media(max-width: 991px) {
+	.texto-principal__titulo {
+		font-size: 2.4em;
+	}
+
+	.texto-principal__conteudo {
+		font-size: 1.2em;
+	}
+}
+
+/*----------------------------------------------
+    Formulario
+----------------------------------------------*/
+
+.formulario {
+	background-color: rgba(255, 255, 255, 0.90);
+	padding: 30px;
+}
+
+.formulario label{
+	display: block;
+	color: #585858;
+	padding: 5px 10px;
+}
+
+.formulario input{
+	height: 59px;
+	text-align: center;
+}
+
+.formulario__titulo {
+	font-size: 2.5rem;
+	color: #6d5419;
+	padding-bottom: 5px; 
+	border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+    margin-top: 27px;
+	margin-bottom: 30px;
+	text-align: left;
+}
+
+@media(max-width: 991px) {
+	.formulario__titulo {
+		font-size: 1.8rem;
+	}	
+}
+
+.formulario .botao{
+	height: auto;
+}
+
+/*----------------------------------------------
+     Botão
+----------------------------------------------*/
+
+.botao{
+    height: auto;
+	float: right;	
+	border:none;
+	padding: 10px 30px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 2rem;
+	transition: all 0.5s ease-in;
+	outline: none;
+	position: relative;
+	bottom: 0;
+}
+
+.botao:hover , .botao:focus {
+	position: relative;
+	bottom: 5px;
+}
+
+.botao--vermelho {
+	background-color: #a93125;
+}
+
+.botao--vermelho:hover , .botao--vermelho:focus {
+	background-color: #d82513;
+	box-shadow:  0 5px 5px rgba(0, 0, 0, 0.15);
+	outline: none;
+	text-decoration: none;
+	color: #fff;
+}
+
+.botao--amarelo {
+	background-color: #d0a75f;
+}
+
+.botao--amarelo:hover , .botao--amarelo:focus {
+	background-color: #f1b245;
+	box-shadow:  0 5px 5px rgba(0, 0, 0, 0.15);
+	outline: none;
+	text-decoration: none;
+	color: #fff;
+}
+
+/*----------------------------------------------
+     Cadastro
+----------------------------------------------*/
+
+.cadastro {
+	margin-top: 70px;
+	padding: 10px 0;
+}
+
+.cadastro__titulo {
+	border-top: 1px solid rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    background: transparent;
+    margin-bottom: 80px;
+    background: -webkit-linear-gradient(to right, rgba(0, 0, 0, 0) , rgba(103, 69, 0, 0.15) , rgba(0, 0, 0, 0));
+    background: -o-linear-gradient(to right, rgba(0, 0, 0, 0) , rgba(103, 69, 0, 0.15) , rgba(0, 0, 0, 0));
+    background: -moz-linear-gradient(to right, rgba(0, 0, 0, 0) , rgba(103, 69, 0, 0.15) , rgba(0, 0, 0, 0));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) , rgba(103, 69, 0, 0.15) , rgba(0, 0, 0, 0));
+}
+
+.cadastro__sessao {
+    margin: 20px 0;
+    line-height: 20px;
+    padding: 30px 10px;
+    text-align: center;
+    background-color: rgba(160, 111, 0, 0.08);
+}
+
+@media (max-width: 767px) {
+	.cadastro__sessao p{
+		display: block;			
+		margin-bottom: 10px;		
+		text-align: center;
+		padding: 0 10px;
+	}
+
+	.cadastro__sessao .botao{	
+		width: 70%;
+		height: 100%;
+		margin: 0 15%;				
+	}
+}
+
+@media (min-width: 768px) {
+	.cadastro__sessao p{
+		display: inline-block;	
+		width: 55%;
+		margin: 0;
+		padding: 0 10px;
+	}
+
+	.cadastro__sessao .botao{	
+		width: 45%;		
+	}
+}
+
+/*----------------------------------------------
+     Video
+----------------------------------------------*/
+
+.video {
+	width: 70%;
+	margin: 0 15%;
+	padding: 20px;	
+	border: 1px solid rgba(206, 165, 94, 0.16);; 
+}
+
+.video-apresentacao {
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.16);	
+}
+
+@media (max-width: 767px) {
+	.video {
+	    width: 96%;
+	    margin: 0 2%;
+	}
+}

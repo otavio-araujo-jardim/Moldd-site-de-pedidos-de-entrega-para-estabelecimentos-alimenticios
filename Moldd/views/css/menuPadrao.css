@@ -1,0 +1,240 @@
+.layout-barra-usuario {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.90);
+    height: auto;
+    line-height: 50px;
+    border-bottom: 1px solid #4a3b20;
+}
+
+.layout-cabecalho {
+    height: 400px;
+    background-image: url(../imagens/FundoBanner.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: #000;
+}
+
+@media (min-width: 768px) {
+    .layout-cabecalho {
+       background-size: 150% auto;
+    }
+}
+
+@media (min-width: 991px) {
+    .layout-cabecalho {
+       background-size: 110% auto;
+    }
+}
+
+.layout-banner {
+    height:400px;
+    position: relative;
+}
+
+.layout-menu {
+    border-radius: 0;
+    border: none;
+    margin: 0;
+    background: #695a3e;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.16);
+}
+
+/*----------------------------------------------
+     barra
+----------------------------------------------*/
+
+.barra__itens {
+    font-size: 1.4rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+    z-index: 999;
+    border-left: 1px solid #4a3b20;
+    border-right: 1px solid #4a3b20;
+    position: relative;
+}
+.barra__item {
+    width: 100%;
+    min-width: 200px;
+}
+
+.barra__itens-escondidos {
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.80);
+    width: 100%;
+    transition: 0.5s ease-in;
+    right: 0px;
+}
+
+.barra__item-escondido {
+    margin: 10px 0;
+}
+
+.barra__itens-escondidos a {
+    display: block;
+    line-height: 2;
+}
+
+.barra__nome{
+    padding: 0 30px;
+    color: #ccc;
+
+}
+
+.barra_caret {
+    color: #fff;
+}
+
+.barra__item a {
+    padding: 10px 30px;
+    color: #ccc;
+    text-decoration: none;
+	margin: 0;
+}
+
+.barra__item:hover, .barra__item:focus  {
+    background-color: rgb(132, 104, 51);
+    outline: none;
+}
+
+.barra__item a:hover, .barra__item a:focus  {
+    background-color: rgb(37, 31, 18);
+    outline: none;
+}
+
+.barra__item:hover .barra__itens-escondidos{
+    visibility: visible;
+}
+
+.barra__item-escondido .barra__icone {
+    padding: 0 10px 0 0;
+}
+
+/*----------------------------------------------
+     Logo
+----------------------------------------------*/
+
+.banner {
+	height: 100%;
+}
+
+.banner__link {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.banner__link:focus {
+    outline: none;
+}
+
+
+.banner__logo {
+    width: 100%;
+}
+
+.banner__img {
+    width: 35%;
+	position: absolute;
+    right: 0;
+    bottom: 0;
+    
+}
+
+@media (min-width: 250px) {
+    .banner__logo {
+       width: 50%;
+    }
+}
+
+@media (min-width: 500px) {
+    .banner__logo {
+       width: 40%;
+    }
+}
+
+@media (min-width: 768px) {
+    .banner__logo {
+       width: 30%;
+    }
+}
+
+@media (min-width: 991px) {
+    .banner__logo {
+       width: 22%;
+    }
+}
+
+/*----------------------------------------------
+     Menu
+----------------------------------------------*/
+
+.menu__item {
+    color: #fff !important;
+}
+
+.menu__item-selecionado {
+    background-color: #ad9058;
+}
+
+.nav>li>.menu__item , .nav>li>.menu__botao-dropdown {
+    padding: 15px;
+}
+
+.menu__item:hover , .menu__item:focus {
+    background-color: #846f47 !important;
+    color: #fff !important;
+}
+
+.layout-menu .navbar-toggle {
+    border-color: #79694a;
+}
+
+.layout-menu .navbar-toggle:focus, .layout-menu .navbar-toggle:hover {
+    background-color: #846f47;
+}
+
+.layout-menu .navbar-nav>li>a {
+    color: #fff;
+}
+
+.layout-menu .navbar-nav>.open>a, .layout-menu .navbar-nav>.open>a:focus,
+.layout-menu .navbar-nav>.open>a:hover {
+    background-color: #846f47;
+}
+
+.menu__recentes {
+    padding: 10px 0;
+    right: 0;
+    text-align: center;
+    background-color: #000;
+    border: none;
+}
+
+.menu__item-recentes {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.menu__item-recentes:hover , .menu__item-recentes:focus {
+    background-color: rgb(37, 31, 18);
+}
+
+.menu__item-recentes a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width: 991px) {
+    .menu , .menu__recentes {
+        font-size: 1.2rem;
+    }
+}
+
